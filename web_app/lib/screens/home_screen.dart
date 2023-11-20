@@ -86,9 +86,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    const Text(
-                      "Login",
-                      style: TextStyle(color: Colors.black, fontSize: 18),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/home');
+                      },
+                      child: Text(
+                        "Login",
+                        style: TextStyle(color: Colors.black, fontSize: 18),
+                      ),
                     ),
                     const SizedBox(
                       width: 10,
@@ -98,7 +103,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: 150,
                       decoration: BoxDecoration(
                           color: Colors.purple.shade900,
-                          borderRadius: const BorderRadius.all(Radius.circular(20))),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(20))),
                       child: const Center(
                         child: Text(
                           "Book a demo",
@@ -142,24 +148,25 @@ new fuel""",
                     ),
                     //ince metin gri
                     Text(
-                        """
+                      """
 we help teams build stunning
 relationships through data based
 content.  
                         """,
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.grey.shade700,
-                        ),
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.grey.shade700,
                       ),
+                    ),
                     //alttaki kutu
                     Container(
                       height: 50,
                       width: 200,
                       decoration: BoxDecoration(
                           color: Colors.purple.shade900,
-                          borderRadius: const BorderRadius.all(Radius.circular(20))),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(20))),
                       child: const Center(
                         child: Text(
                           "Book a demo",
